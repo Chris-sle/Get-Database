@@ -1,0 +1,81 @@
+@baseUrl = http://localhost:5108
+
+### Health check
+GET {{baseUrl}}/health
+
+### ==================== NOTES ====================
+
+### Get all notes
+GET {{baseUrl}}/notes
+
+### Create new note
+POST {{baseUrl}}/notes
+Content-Type: application/json
+
+{
+  "title": "Test note",
+  "body": "Created from HTTP file"
+}
+
+### Create invalid note (should fail)
+POST {{baseUrl}}/notes
+Content-Type: application/json
+
+{
+  "title": "",
+  "body": "Empty title"
+}
+
+### ==================== TODOS ====================
+
+### Get all Todos
+GET {{baseUrl}}/todos
+
+### Create new Todo
+POST {{baseUrl}}/todos
+Content-Type: application/json
+
+{
+  "Task": "Add new Todo from html",
+  "IsCompleted": true
+}
+
+### ==================== COUNTER ====================
+
+### Get Counter Status
+GET {{baseUrl}}/counter
+
+### Increment Counter
+POST {{baseUrl}}/counter/increment
+Content-Type: application/json
+
+{
+  "who": "Alex"
+}
+
+### ==================== USERS ====================
+
+### Get first 100 users
+GET {{baseUrl}}/users
+
+### Get users with paging
+GET {{baseUrl}}/users?skip=100&take=50
+
+### Search exact email (USES INDEX - fast!)
+GET {{baseUrl}}/users/search/email?q=user12345@example.com
+
+### Search email prefix (USES INDEX - fast!)
+GET {{baseUrl}}/users/search/email-prefix?q=user1
+
+### Search email contains (NO INDEX - slow!)
+GET {{baseUrl}}/users/search/email-contains?q=gmail
+
+### Get users from Norway
+GET {{baseUrl}}/users/country/NO
+
+### Get users from Sweden
+GET {{baseUrl}}/users/country/SE
+
+### Get statistics per country
+GET {{baseUrl}}/users/stats
+
