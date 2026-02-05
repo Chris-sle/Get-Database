@@ -1,3 +1,153 @@
+# ==================== DATABASE ====================
+# SQLite database files (runtime data)
 /data/*.db
 /data/*.db-shm
 /data/*.db-wal
+
+# ==================== BUILD OUTPUT ====================
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Ww][Ii][Nn]32/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# ==================== VISUAL STUDIO ====================
+# Visual Studio cache/options
+.vs/
+.vscode/
+
+# Visual Studio user-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Visual Studio Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# ==================== NUGET ====================
+# NuGet Packages
+*.nupkg
+# NuGet Symbol Packages
+*.snupkg
+# The packages folder can be ignored because of Package Restore
+**/[Pp]ackages/*
+# except build/, which is used as an MSBuild target.
+!**/[Pp]ackages/build/
+# Uncomment if necessary however generally it will be regenerated when needed
+#!**/[Pp]ackages/repositories.config
+# NuGet v3's project.json files produces more ignorable files
+*.nuget.props
+*.nuget.targets
+
+# ==================== RIDER ====================
+# JetBrains Rider
+.idea/
+*.sln.iml
+
+# ==================== USER-SPECIFIC FILES ====================
+# User-specific files (MonoDevelop/Xamarin Studio)
+*.userprefs
+
+# Mono auto generated files
+mono_crash.*
+
+# ==================== TEST RESULTS ====================
+# Test Results
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+
+# ==================== .NET CORE ====================
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# ==================== ASPNET ====================
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# ==================== MISC ====================
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# VS Code directories
+.vscode/
+
+# Mac files
+.DS_Store
+
+# Windows Installer files
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+
+# ==================== PUBLISH PROFILES ====================
+# Publish profiles
+PublishProfiles/
+*.pubxml
+*.publishsettings
+
+# ==================== SQL SERVER ====================
+# SQL Server files
+*.mdf
+*.ldf
+*.ndf
+
+# ==================== BACKUP FILES ====================
+# Backup & report files from converting an old project file
+_UpgradeReport_Files/
+Backup*/
+UpgradeLog*.XML
+UpgradeLog*.htm
+ServiceFabricBackup/
+*.rptproj.bak
+
+# ==================== RESHARPER ====================
+# ReSharper is a .NET coding add-in
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+
+# ==================== MISC FILES ====================
+# Temporary files
+*.tmp
+*.temp
+*.log
+
+# Environment files (if you use them)
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# ==================== PROJECT-SPECIFIC ====================
+# Custom ignores can go here
