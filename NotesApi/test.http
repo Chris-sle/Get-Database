@@ -53,6 +53,16 @@ Content-Type: application/json
   "who": "Alex"
 }
 
+### ==================== COUNTER - SAFE VERSION ====================
+
+### Increment Counter SAFELY (with optimistic concurrency)
+POST {{baseUrl}}/counter/increment-safe
+Content-Type: application/json
+
+{
+  "who": "SafeUser"
+}
+
 ### ==================== USERS ====================
 
 ### Get first 100 users
